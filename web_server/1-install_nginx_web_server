@@ -8,6 +8,7 @@ mkdir /etc/nginx/html
 
 touch /etc/nginx/html/index.html
 
+
 echo "Holberton School" > /etc/nginx/html/index.html
 
 
