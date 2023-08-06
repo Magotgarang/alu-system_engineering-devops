@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# bash script to install nginx web server & make the following configurations:
+# a script to install nginx web server & make the following configurations:
 
 apt-get update
 apt-get install -y nginx
@@ -29,9 +29,7 @@ printf %s "server {
      root        /etc/nginx/html;
      index       index.html index.htm;
      add_header X-Served-By $HOSTNAME;
-
      error_page 404 /404.html;
-
      location /404 {
         root /etc/nginx/html;
         internal;
@@ -39,4 +37,4 @@ printf %s "server {
 }
 " > /etc/nginx/sites-available/default
 
-service nginx restart
+service nginx restart
