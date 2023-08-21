@@ -1,5 +1,5 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 # comment
-In -sf /etc/nginx/sites-available/default /etc/gnix/sites-enabled/default
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
 kill "$(pgrep 'nginx' | head -1)"
